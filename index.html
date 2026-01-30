@@ -73,6 +73,14 @@ body{
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(30px);transition:.8s}
 .reveal.visible{opacity:1;transform:none}
+
+/* Galerie uniformisée */
+.gallery-grid img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
 </style>
 </head>
 
@@ -199,7 +207,7 @@ body{
   <div class="max-w-6xl mx-auto reveal">
     <h2 class="text-center text-4xl font-black mb-4">GALERIE</h2>
     <div class="blue-line"></div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 gallery-grid">
       
       <img src="makash-waloo.jpg" class="rounded-lg hover:scale-105 transition duration-300" alt="Cocoon Club - Galerie">
       <img src="pulse-trio.png" class="rounded-lg hover:scale-105 transition duration-300" alt="Cocoon Club - Galerie">
